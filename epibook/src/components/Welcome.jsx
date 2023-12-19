@@ -15,8 +15,8 @@ class Welcome extends React.Component {
                     {books.fantasy.map((book) => {
                         return (
                             <Col md={6} lg={4}>
-                                <Card style={{ width: '18rem', height: '20rem' }}>
-                                    <Card.Img variant="top" src={book.img} alt={book.title}  />
+                                <Card style={{ width: '18rem' }} className="mb-5">
+                                    <Card.Img variant="top" src={book.img} alt={book.title} style={{ height: '20rem'}}/>
                                     <Card.Body>
                                         <Card.Title>{book.title}</Card.Title>
                                         <Card.Text>
