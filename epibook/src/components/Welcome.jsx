@@ -12,7 +12,7 @@ class Welcome extends React.Component {
     render(){
         return(
             <Container>
-                <Row className="justify-content-center" >
+                <Row className="justify-content-center text-center mb-5 text-white" >
                     <div className="jumbotron jumbotron-fluid">
                         <h1>Fantasy</h1>
                     </div>
