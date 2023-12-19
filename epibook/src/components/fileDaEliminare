@@ -1,0 +1,108 @@
+ecco una parte del mio file json nominato "books" con al suo interno :
+
+{
+    "fantasy": [
+        {
+            "asin": "0316438960",
+            "title": "The Last Wish: Introducing the Witcher",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/51eHtkVLL5L.jpg",
+            "price": 9.59,
+            "category": "fantasy"
+        },
+        {
+            "asin": "0316389706",
+            "title": "Sword of Destiny (The Witcher)",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/91uxJwnolDL.jpg",
+            "price": 10.39,
+            "category": "fantasy"
+        },
+        {
+            "asin": "0786966246",
+            "title": "D&D MORDENKAINEN'S TOME OF FOES (Dungeons & Dragons)",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/8147MOLG%2BoL.jpg",
+            "price": 27.94,
+            "category": "fantasy"
+        },
+        {
+            "asin": "1945683694",
+            "title": "Destiny Grimoire Anthology, Volume II: Fallen Kingdoms",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/91IHwcEy2DL.jpg",
+            "price": 19.92,
+            "category": "fantasy"
+        },
+        {
+            "asin": "0786966254",
+            "title": "D&D Waterdeep Dragon Heist HC (Dungeons & Dragons)",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81Sfnxpke4L.jpg",
+            "price": 34.61,
+            "category": "fantasy"
+        },
+        {
+            "asin": "0062059882",
+            "title": "American Gods: The Tenth Anniversary Edition: A Novel",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/519mwdpzlmL.jpg",
+            "price": 14.94,
+            "category": "fantasy"
+        },
+        {
+            "asin": "0345535413",
+            "title": "A Clash of Kings (HBO Tie-in Edition): A Song of Ice and Fire: Book Two",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/91Pqmk8FzAL.jpg",
+            "price": 14.31,
+            "category": "fantasy"
+        },
+    ],
+    "history": [
+        {
+            "asin": "1621579832",
+            "title": "Justice on Trial: The Kavanaugh Confirmation and the Future of the Supreme Court",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/71WdFQNYSJL.jpg",
+            "price": 17.39,
+            "category": "history"
+        },
+        {
+            "asin": "0307742482",
+            "title": "Killers of the Flower Moon: The Osage Murders and the Birth of the FBI",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81qxqy2R%2BmL.jpg",
+            "price": 12.71,
+            "category": "history"
+        },
+        {
+            "asin": "0525512179",
+            "title": "21 Lessons for the 21st Century",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/811iZOA9%2B8L.jpg",
+            "price": 14.9,
+            "category": "history"
+        },
+        {
+            "asin": "0307476073",
+            "title": "Wild: From Lost to Found on the Pacific Crest Trail",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81WNVAgspxL.jpg",
+            "price": 10.27,
+            "category": "history"
+        },
+        {
+            "asin": "0385349947",
+            "title": "Lean In: Women, Work, and the Will to Lead",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81coZ37EmxL.jpg",
+            "price": 14.3,
+            "category": "history"
+        },
+        {
+            "asin": "0062363603",
+            "title": "Hidden Figures: The American Dream and the Untold Story of the Black Women Mathematicians Who Helped Win the Space Race",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/71O3WN6oyzL.jpg",
+            "price": 9.75,
+            "category": "history"
+        },
+        {
+            "asin": "1476794146",
+            "title": "Five Presidents: My Extraordinary Journey with Eisenhower, Kennedy, Johnson, Nixon, and Ford",
+            "img": "https://images-na.ssl-images-amazon.com/images/I/81XDguZCJgL.jpg",
+            "price": 7.78,
+            "category": "history"
+        },
+    ]
+}.
+
+ora come faccio nel mio file jsx ad andare a recuperare l'immagine in un libro qualunche ?
