@@ -13,6 +13,11 @@ class Welcome extends React.Component {
         return(
             <Container>
                 <Row className="justify-content-center" >
+                    <div className="jumbotron jumbotron-fluid">
+                        <h1>Fantasy</h1>
+                    </div>
+                </Row>
+                <Row className="justify-content-center" >
                     {books.fantasy.map((book) => {
                         return (
                             <Col md={6} lg={4}>
@@ -33,6 +38,8 @@ class Welcome extends React.Component {
             </Container>
         )
     }
+
+
 }
 
 
