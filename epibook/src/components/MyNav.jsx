@@ -9,7 +9,7 @@ const MyNav = (props) => {
     console.log(props);
 
     return (
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg">
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <img src='/assets/logoLibreria.png' alt="logo Libreria" /> EpiBook MK Edition

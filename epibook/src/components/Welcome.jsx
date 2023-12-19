@@ -3,6 +3,7 @@ import books from "../data/books/books.json";
 import  Container  from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import { Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
+import "./Welcome.css"
 
 class Welcome extends React.Component {
     state = {libroSelezionato: books.fantasy[0]};
