@@ -1,3 +1,7 @@
 body {
     background-color: #313033;
 }
+
+.text-center.container {
+    color: aliceblue;
+}

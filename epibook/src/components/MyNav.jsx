@@ -17,9 +17,13 @@ const MyNav = (props) => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className='ms-auto'>
-                        <Nav.Link href='#menu'>Home</Nav.Link>
-                        <Nav.Link href='#prezzi'>About</Nav.Link>
-                        <Nav.Link href='#mappa'>Browse</Nav.Link>
+                        <Nav.Link href='#home'>Home</Nav.Link>
+                        <Nav.Link href='#About'>About</Nav.Link>
+                        <Nav.Link href='#fantasy'>Fantasy</Nav.Link>
+                        <Nav.Link href='#history'>History</Nav.Link>
+                        <Nav.Link href='#horror'>Horror</Nav.Link>
+                        <Nav.Link href='#romance'>Romance</Nav.Link>
+                        <Nav.Link href='#scifi'>Sci-fi</Nav.Link>
                     </Nav>
 
                 </Navbar.Collapse>
