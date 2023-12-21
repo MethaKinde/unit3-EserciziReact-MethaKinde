@@ -5,7 +5,7 @@ const Welcome = () => {
     return (
         <Container className="text-center">
             <Row>
-                <h1>Welcome to my EpiBooks!</h1>
+                <h1 id="home">Welcome to my EpiBooks!</h1>
                 <p>Our list books</p>
             </Row>
         </Container>

@@ -24,12 +24,14 @@ function App() {
   }
 
   return (
-    <Container>
+    <>
       <MyNav onSelectCategory={handleCategorySelect} />
-      <Welcome />
-      {/* <AllTheBooks /> */}
-      <BookList books={selectedCategory} />
-    </Container>
+      <Container>
+        <Welcome />
+        {/* <AllTheBooks /> */}
+        <BookList books={selectedCategory} />
+      </Container>
+    </>
   );
 }
 
