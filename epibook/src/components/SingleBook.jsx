@@ -2,36 +2,29 @@ import React from 'react';
 import Card from "react-bootstrap/Card";
 
 class SingleBook extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            selected: false,
-        };
+    state = {
+        selected: false,
     }
 
-    handleToggleSelection = () => {
-        this.setState((prevState) => ({
-            selected: !prevState.selected,
-        }));
-    };
-
     render() {
-    
-        const title = this.props.book.title;
-        const cover = this.props.book.img;
-        const { selected } = this.state;
-
         return (
             <Card
-                style={{ width: '18rem', border: selected ? '2px solid green' : 'none' }}
-                onClick={this.handleToggleSelection}
+                onClick={() => this.setState({ selected: !this.state.selected })}
+                style={{ border: this.state.selected ? '3px solid red' : 'none' }}
+                className='mt-5'
             >
-                <Card.Img variant="top" src={cover} alt={title} />
+                <Card.Img variant="top" src={this.props.book.img} />
                 <Card.Body>
-                    <Card.Title>{title}</Card.Title>
+                    <Card.Title style={{ color: 'black' }}>
+                        {this.props.book.title}
+                    </Card.Title>
+                    <Card.Text>
+                        categoria: {this.props.book.category}<br />
+                        prezzo : {this.props.book.price}€
+                    </Card.Text>
                 </Card.Body>
             </Card>
-        );
+        )
     }
 }
 

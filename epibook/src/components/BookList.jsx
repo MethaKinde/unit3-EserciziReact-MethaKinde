@@ -1,42 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SingleBook from './SingleBook';
+import { Col, Form, Row } from 'react-bootstrap'
 
-const BookList = ({ books }) => {
-    const [searchQuery, setSearchQuery] = useState('');
-
-    const getSearchQuery = (query) => {
-        setSearchQuery(query);
-    };
-
-    // Filtra i libri in base alla stringa di ricerca
-    const filteredBooks = books
-        .flatMap((category) => category.books) // Unisce gli array di libri in una singola lista
-        .filter((book) =>
-            book.title.toLowerCase().includes(searchQuery.toLowerCase())
-        );
-
-    return (
-        <div>
-            <SearchBar getSearchQuery={getSearchQuery} />
-            {filteredBooks.map((book, index) => (
-                <SingleBook key={index} book={book} />
-            ))}
-        </div>
-    );
-};
-
-const SearchBar = ({ getSearchQuery }) => {
-    const handleSearch = (e) => {
-        getSearchQuery(e.target.value);
-    };
-
-    return (
-        <input
-            type="text"
-            placeholder="Cerca per titolo"
-            onChange={handleSearch}
-        />
-    );
-};
+class BookList extends React.Component {
+    state = {
+      searchQuery: '',
+    }
+  
+    render() {
+      return (
+        <>
+          <Row>
+            <Col>
+              <Form.Group>
+                <Form.Label className='text-white'>Cerca un Libro</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Scrivi il titolo qua"
+                  value={this.state.searchQuery}
+                  onChange={(e) => this.setState({ searchQuery: e.target.value })}
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+          <Row>
+            {this.props.books.filter((b) =>
+                b.title.toLowerCase().includes(this.state.searchQuery)
+              )
+              .map((b) => (
+                <Col xs={12} md={4} lg={3} key={b.asin}>
+                  <SingleBook book={b} />
+                </Col>
+              ))}
+          </Row>
+        </>
+      )
+    }
+  }
 
 export default BookList;

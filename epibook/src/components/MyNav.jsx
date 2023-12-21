@@ -2,11 +2,19 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import "./MyNav.css"
+import "./MyNav.css";
+
+import fantasy from '../data/books/fantasy.json';
+import history from '../data/books/history.json';
+import horror from '../data/books/horror.json';
+import romance from '../data/books/romance.json';
+import scifi from '../data/books/scifi.json';
 
 
-const MyNav = (props) => {
-    console.log(props);
+const MyNav = ({onSelectCategory}) => {
+    const handleCategorySelect = (category) => {
+        onSelectCategory(category)
+      }
 
     return (
         <Navbar collapseOnSelect expand="lg">
@@ -19,11 +27,11 @@ const MyNav = (props) => {
                     <Nav className='ms-auto'>
                         <Nav.Link href='#home'>Home</Nav.Link>
                         <Nav.Link href='#About'>About</Nav.Link>
-                        <Nav.Link href='#fantasy'>Fantasy</Nav.Link>
-                        <Nav.Link href='#history'>History</Nav.Link>
-                        <Nav.Link href='#horror'>Horror</Nav.Link>
-                        <Nav.Link href='#romance'>Romance</Nav.Link>
-                        <Nav.Link href='#scifi'>Sci-fi</Nav.Link>
+                        <Nav.Link href='#fantasy#'><button onClick={() => handleCategorySelect(fantasy)}>Fantasy</button></Nav.Link>
+                        <Nav.Link href='#history#'><button onClick={() => handleCategorySelect(history)}>History</button></Nav.Link>
+                        <Nav.Link href='#horror#'><button onClick={() => handleCategorySelect(horror)}>Horror</button></Nav.Link>
+                        <Nav.Link href='#romance#'><button onClick={() => handleCategorySelect(romance)}>Romance</button></Nav.Link>
+                        <Nav.Link href='#scifi#'><button onClick={() => handleCategorySelect(scifi)}>Sci-fi</button></Nav.Link>
                     </Nav>
 
                 </Navbar.Collapse>

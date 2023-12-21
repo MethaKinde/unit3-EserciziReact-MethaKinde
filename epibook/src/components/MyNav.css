@@ -1,4 +1,4 @@
-img {
+nav img {
     width: 80px;
     height: 80px;
 }
@@ -18,4 +18,15 @@ img {
     background-color: #313033;
     height: 10vh;
     margin-bottom: 30px;
-  }
+}
+
+button {
+    border-radius: 15px;
+    color: bisque;
+    background-color: #313033;
+    border: 0;
+}
+
+button:hover {
+    color: black;
+}
